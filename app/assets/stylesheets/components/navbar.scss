@@ -1,0 +1,51 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  margin: -8px;
+  background-color: black;
+}
+
+nav .logo {
+  padding-right: 45px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  font-size: 17px;
+  color: white;
+  font-family: "Open Sans Regular";
+  text-decoration: none;
+}
+
+li {
+  padding-right: 25px;
+}
+
+.links {
+  padding-top: 27px;
+}
+
+.login {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.login-content {
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px 20px;
+}
+
+.login:hover .login-content {
+    display: block;
+}

@@ -1,0 +1,61 @@
+<body onload="document.getElementById('defaultOpen').click();">
+
+<div class="card">
+  <img src="https://i2.wp.com/www.potins.net/wp-content/uploads/2014/06/1403965682-5cffeba88561693f0264bc818f18ed2d.jpg?resize=800%2C600" alt="Justin Timberlake" style="width:100%">
+  <h2>Justin Timberlake</h2>
+  <p class="title">CEO & Founder</p>
+  <p>à The Hacking Project</p>
+  <a href="#"><i class="fa fa-dribbble"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <p><button class="contactbutton">J'engage ! <i class="fa fa-thumbs-up"></i></button></p>
+</div>
+
+
+<div class="mastertabs">
+  <div class="tab">
+    <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'Parcours')">Parcours</button>
+    <button class="tablinks" onclick="openTab(event, 'Competences')">Compétences</button>
+  </div>
+
+  <div id="Parcours" class="tabcontent" align="center">
+    <h1>Parcours</h1>
+    <h3>The Hacking Project</h3>
+    <p>2018</p>
+  </div>
+
+  <div id="Competences" class="tabcontent" align="center">
+    <h1>Compétences</h3>
+    <h3>Ruby</h3>
+    <p>Ruby on Rails</p>
+    <h3>Python</h3>
+    <p>Django</p>
+    <p>PyGame</p>
+    <h3>SysAdmin</h3>
+  </div>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+</body>

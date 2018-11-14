@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cursus</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="http://image.noelshack.com/fichiers/2018/46/2/1542124565-cursus.png" alt="Logo" width="200px" height="75px">
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="#">Inscription</a></li>
+          <li><a href="#">Connexion</a></li>
+          <li><a href="#">Les cours</a></li>
+        </ul>
+      </div>
+      <div class="login" align="right">
+        <img src="http://image.noelshack.com/fichiers/2018/46/2/1542128872-design-4.png" alt="Login" width="50px" height="50px">
+        <div class="login-content">
+          <p>Mon profil</p>
+          <p>Paramètres</p>
+          <p>Me déconnecter</p>
+        </div>
+      </div>
+    </nav>
+
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
